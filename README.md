@@ -73,12 +73,19 @@ sudo systemctl enable zabbix-server apache2
 Приложите в файл README.md текст использованных команд в GitHub
 
 Поле для вставки кода...
+
 sudo -s
+
 wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu24.04_all.deb
+
 dpkg -i zabbix-release_latest_6.0+ubuntu24.04_all.deb
+
 apt update.
+
 apt install zabbix-agent
+
 systemctl restart zabbix-agent
+
 systemctl enable zabbix-agent
 ```
 
