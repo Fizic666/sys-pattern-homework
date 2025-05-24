@@ -58,8 +58,8 @@ sudo systemctl enable zabbix-server apache2
 ....
 ```
 
-`При необходимости прикрепитe сюда скриншоты
-![Запущенный Zabbix](https://github.com/Fizic666/sys-pattern-homework/blob/main/8.3-1.jpg)`
+
+![Запущенный Zabbix](https://github.com/Fizic666/sys-pattern-homework/blob/main/8.3-1.jpg)
 
 
 ---
