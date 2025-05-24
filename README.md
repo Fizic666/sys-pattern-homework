@@ -24,8 +24,6 @@
 5. `Заполните здесь этапы выполнения, если требуется ....`
 6. 
 
-```
-Поле для вставки кода...
 sudo apt install postgresql
 
 sudo apt install wget -y
@@ -52,13 +50,6 @@ sudo systemctl restart zabbix-server apache2
 
 sudo systemctl enable zabbix-server apache2
 
-....
-....
-....
-....
-```
-
-
 ![Запущенный Zabbix](https://github.com/Fizic666/sys-pattern-homework/blob/main/8.3-1.jpg)
 
 
@@ -66,21 +57,29 @@ sudo systemctl enable zabbix-server apache2
 
 ### Задание 2
 
-`Приведите ответ в свободной форме........`
+Задание 2
+Установите Zabbix Agent на два хоста.
 
-1. `Заполните здесь этапы выполнения, если требуется ....`
-2. `Заполните здесь этапы выполнения, если требуется ....`
-3. `Заполните здесь этапы выполнения, если требуется ....`
-4. `Заполните здесь этапы выполнения, если требуется ....`
-5. `Заполните здесь этапы выполнения, если требуется ....`
-6. 
+Процесс выполнения
+Выполняя ДЗ, сверяйтесь с процессом отражённым в записи лекции.
+Установите Zabbix Agent на 2 вирт.машины, одной из них может быть ваш Zabbix Server.
+Добавьте Zabbix Server в список разрешенных серверов ваших Zabbix Agentов.
+Добавьте Zabbix Agentов в раздел Configuration > Hosts вашего Zabbix Servera.
+Проверьте, что в разделе Latest Data начали появляться данные с добавленных агентов.
+Требования к результатам
+Приложите в файл README.md скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу
+Приложите в файл README.md скриншот лога zabbix agent, где видно, что он работает с сервером
+Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
+Приложите в файл README.md текст использованных команд в GitHub
 
-```
 Поле для вставки кода...
-....
-....
-....
-....
+sudo -s
+wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu24.04_all.deb
+dpkg -i zabbix-release_latest_6.0+ubuntu24.04_all.deb
+apt update.
+apt install zabbix-agent
+systemctl restart zabbix-agent
+systemctl enable zabbix-agent
 ```
 
 `При необходимости прикрепитe сюда скриншоты
