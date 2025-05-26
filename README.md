@@ -91,7 +91,7 @@ systemctl enable zabbix-agent
 
 ![](https://github.com/Fizic666/sys-pattern-homework/blob/main/8.3-4.jpg)
 
-
+![](https://github.com/Fizic666/sys-pattern-homework/blob/main/8.3-4(2).jpg)
 
 
 
